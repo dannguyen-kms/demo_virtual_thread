@@ -6,10 +6,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.Callable;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.Future;
-import java.util.concurrent.TimeoutException;
+import java.util.concurrent.*;
 
 public class StructuredTask {
     public static void main(String[] args) throws InterruptedException, ExecutionException, TimeoutException {
@@ -70,5 +67,6 @@ public class StructuredTask {
             }).sum());
         }
     }
+
 
 }
