@@ -1,4 +1,4 @@
-package org.example;
+package org.example.compare;
 
 
 import jakarta.servlet.ServletException;
@@ -38,7 +38,7 @@ public class handler extends AbstractHandler
                        jakarta.servlet.http.HttpServletResponse response) throws IOException {
         response.setContentType("text/html; charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
-
+        System.out.println("hello");
         PrintWriter out = response.getWriter();
 
         out.println("<h1>" + greeting + "</h1>");
@@ -52,7 +52,7 @@ public class handler extends AbstractHandler
         int result = random.nextInt(high-low) + low;
 
         try {
-            Thread.sleep(Integer.toUnsignedLong(result));
+            Thread.sleep(Integer.toUnsignedLong(1000));
             baseRequest.setHandled(true);
         } catch (InterruptedException ex){
             baseRequest.setHandled(false);

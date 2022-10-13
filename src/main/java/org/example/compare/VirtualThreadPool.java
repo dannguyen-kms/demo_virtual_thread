@@ -1,4 +1,4 @@
-package org.example;
+package org.example.compare;
 
 import org.eclipse.jetty.util.thread.ThreadPool;
 
